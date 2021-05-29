@@ -1,0 +1,28 @@
+% Ti­tulo: Teorema del Valor Intermedio
+% Autor: Alexia Michell Blas Hernandez (alexiabh10) michhernandez1001@gmail.com
+% Fecha: 20210527
+% Grupo:3201
+% Correo: michhernandez1001@gmail.com
+% Materia: Calculo Integral
+%Ejercicio 3: 3*x-5, [-2,4]
+
+clc 
+clear
+syms x;
+fx= input("INGRESE LA FUNCION :")
+funcion = inline (char(fx))
+a= input("INGRESE EL VALOR DEL LIMITE INFERIOR: "); 
+b= input("INGRESE EL VALOR DEL LIMITE SUPERIOR : ");
+k= input ("INFRESE LA CONSTANTE K : ");
+resultado1= 3*b-5
+resultado2= 3*a-5
+total= resultado1< k < resultado1 
+
+fprintf( "Es verdad que 1 esta entre los intervalos de -2 a 4");
+
+x = -2:0.2:4;
+f=x;
+plot(f,x);
+grid on
+hold on
+plot(f,x )
